@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-image: url("../assets/images/istockphoto-1322146286-170667a.jpg");
+    background-size: cover;
+    background-position: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+header h1 a {
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px;
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header nav ul li a {
+    color: aliceblue;
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px;
+}
+
+header h1 a {
+    color: aliceblue;
+    border-bottom: 0;
+}
