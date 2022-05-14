@@ -3,15 +3,24 @@ body {
 }
 
 #headshot {
-    height: 250px;
+    height: 150px;
     border-radius: 10%;
     box-shadow: 2px 2px 2px gray;
 }
 
 header {
     padding: 10px;
-    background-image: linear-gradient(to right, rgba(23, 23, 146 ), rgba(98, 98, 245, 0.651));
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url("../assets/images/istockphoto-1322146286-170667a.jpg");
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    z-index: 9999;
 }
 
 header div {
@@ -90,4 +99,37 @@ section .content {
 #resume {
     display: flex;
     height: 200px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+        }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /*fill in with rules*/
+}
+
+@media screen and (max-width: 575px) {
+    /*fill in with rules*/
 }
